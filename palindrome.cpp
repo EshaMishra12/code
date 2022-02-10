@@ -1,27 +1,25 @@
-#include<iostream>
-using namespace std;
+#include <stdio.h>
+#include <iostream.h>
 
 int main()
 {
-int i =1;
-int n,r,t;
-int sum=0;
-
-cout<<"Enter a number:";
+int n,s=0,r,t;
+cout<<"Enter number: ";
 cin>>n;
 t=n;
-while(n!=0)
+while(n)
 {
-r=n%10;
-sum = sum*10 + r;
-n=n/10;
+r = n%10;
+s = s*10 + r;
+n = n/10;
 }
-if(sum==t)
+if (t==s)
 {
-cout<<"Palindrome...\n";
+cout<<"No is Pal...";
 }
 else
 {
-cout<<"Not palindrome...\n";
+cout<<"No is not Pal. . .";
 }
-cout<<"Bye. . . ";
+return 0;
+}
